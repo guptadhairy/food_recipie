@@ -7,6 +7,7 @@ import Icon from "react-native-vector-icons/AntDesign"
 export default function Welcome({navigation}) {
   return (
     <View style={{padding: Platform.OS === "android" ? StatusBar.currentHeight : 0, flex: 1, backgroundColor: "#265073", justifyContent: "center", alignItems: "center"}}>
+      <StatusBar backgroundColor={"#265073"} />
       <LottieView style={styles.lottie} source={require('../assets/food.json')} autoPlay loop />
       <Text style={{color: "white", fontSize: 30, fontWeight:"bold"}}>FlavorFiesta</Text>
       <Text style={{color: "white"}}>Every Bite is a Culinary Celebration!</Text>

@@ -71,6 +71,7 @@ const RecipiScreen = (props) => {
       style={{ backgroundColor: "white", flex: 1 }}
       showsVerticalScrollIndicator={false}
     >
+      <StatusBar backgroundColor={"white"} barStyle={"dark-content"} />
       {/* <StatusBar barStyle={"light-content"} /> */}
       <View
         style={{

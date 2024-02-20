@@ -47,7 +47,8 @@ export default function Home() {
     }
 
   return (
-    <View style={{padding: Platform.OS === "android" ? StatusBar.currentHeight : 0, flex: 1}}>
+    <View style={{ flex: 1, backgroundColor: "white", paddingHorizontal: 20}}>
+      <StatusBar backgroundColor={"white"} barStyle={"dark-content"} />
       <ScrollView showsVerticalScrollIndicator={false}>
       <View style={{paddingTop: 10, display: "flex", flexDirection: "row", justifyContent: "space-between", }}>
         <Image style={styles.image} source={require("../assets/avatar.png")} />
